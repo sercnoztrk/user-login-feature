@@ -1,0 +1,14 @@
+<% include ./partials/header %>
+   
+    <div class="container">
+        <h1>Reset Password</h1>
+        <hr class="my-5">
+        <form action="/forgot" method="post">
+            <div class="form-group">
+                <input type="email" class="form-control" name="email" placeholder="E-mail">
+            </div>
+            <input type="submit" class="btn btn-primary" value="Reset Password">
+        </form>
+    </div>
+
+<% include ./partials/footer %>

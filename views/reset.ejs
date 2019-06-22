@@ -1,0 +1,17 @@
+<% include ./partials/header %>
+   
+    <div class="container">
+        <h1>Enter New Password</h1>
+        <hr class="my-5">
+        <form action="/reset/<%= token %>" method="post">
+            <div class="form-group">
+                <input type="password" class="form-control" name="firstPassword" placeholder="Enter Password">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" name="secondPassword" placeholder="Confirm Password">
+            </div>
+            <input type="submit" class="btn btn-primary" value="Update Password">
+        </form>
+    </div>
+
+<% include ./partials/footer %>

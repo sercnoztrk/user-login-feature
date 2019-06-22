@@ -1,0 +1,16 @@
+<% include ./partials/header %>
+   
+    <div class="container">
+        <h1>Verify Your Account</h1>
+        <hr class="my-4">
+        <form action="/confirmation" class="d-inline" method="post">
+            <div class="form-group">
+                <input type="text" class="form-control" name="code" placeholder="Enter Your Verification Code">
+            </div>
+            <button type="submit" class="btn btn-success">Confirm</button>
+            <button type="submit" class="btn btn-secondary" formaction="/resend">Resend</button>
+        </form>
+        <!-- <a class="btn btn-link d-inline" href="/">Back</a> -->
+    </div>
+
+<% include ./partials/footer %>
